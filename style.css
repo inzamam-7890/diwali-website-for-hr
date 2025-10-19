@@ -81,6 +81,8 @@ body {
 }
 
 .info-section {
+    max-height: 80vh;
+    overflow-y: auto;
     background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
     padding: 2rem;
     border-radius: 10px;
@@ -136,5 +138,18 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* --- Mobile Optimization --- */
+@media (max-width: 600px) {
+    /* फ़ोन स्क्रीन के लिए फ़ॉन्ट साइज़ छोटा कर रहे हैं */
+    .info-section p {
+        font-size: 1em; /* 1.1em से 1em कर दिया */
+    }
+
+    /* अगर हैडर भी बहुत बड़ा लग रहा हो */
+    .main-header h1 {
+        font-size: 3em; 
     }
 }
