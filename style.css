@@ -74,14 +74,15 @@ body {
     flex-grow: 1; /* Allows content to take available space */
     display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
     padding: 2rem;
     position: relative;
     z-index: 3;
+    /* flex-grow: 1; */
 }
 
 .info-section {
-    max-height: 80vh;
+    max-height: 70vh;
     overflow-y: auto;
     background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
     padding: 2rem;
@@ -145,10 +146,11 @@ body {
 @media (max-width: 600px) {
     /* फ़ोन स्क्रीन के लिए फ़ॉन्ट साइज़ छोटा कर रहे हैं */
     .info-section p {
-        font-size: 1em; /* 1.1em से 1em कर दिया */
+        font-size: 0.9em; /* 1.1em से 1em कर दिया */
     }
 
     /* अगर हैडर भी बहुत बड़ा लग रहा हो */
+    line-height: 1.4;
     .main-header h1 {
         font-size: 3em; 
     }
