@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #fff; /* White text for contrast on dark images */
+    color: #ffff; /* White text for contrast on dark images */
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -107,6 +107,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.dark-text{
+    color: rgb(0, 255, 179);
+}
+
 /* Footer Styling */
 .main-footer {
     text-align: center;
@@ -150,7 +154,7 @@ body {
     }
 
     /* अगर हैडर भी बहुत बड़ा लग रहा हो */
-    line-height: 1.4;
+    line-height: 1.4em;
     .main-header h1 {
         font-size: 3em; 
     }
